@@ -45,7 +45,7 @@
 		var age = req.body.age;
 		var behavior= req.body.behavior;
 		var img=req.body.img;
-		var Character = require('./models/character'); 
+		var Character = require('./models/character'); //IMPORTANTE: Tengo el error de que si no vuelvo a instanciar el objeto no es reconocido luego...
 		// Creacion de una nueva instancia del modelo character
 		var Character = new Character({ 
 			name: name, 
